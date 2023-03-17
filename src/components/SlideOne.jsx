@@ -18,16 +18,12 @@ const {windowWidth} = useGlobalContext()
       <div className="wrapper">
         <div className={` ${windowWidth < 768 ? 'details' : 'big-wrapper'}`}>
           <DetailsStepOne/>
-          <div className={` ${windowWidth < 768 ? 'no-footer' : 'big-footer'}`}>
-            <Footer/>
-          </div>
         </div>
       </div>
       </div>
     </div>
     </Wrapper>
     </>
-
   )
 }
 

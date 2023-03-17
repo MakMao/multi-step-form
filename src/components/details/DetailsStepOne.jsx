@@ -56,7 +56,11 @@ const validate = Yup.object({
                 <div className="btn-container">
                   <button type="submit" onSubmit={handleSubmit} className="next-btn">Next Step</button>
                 </div>
-                ) : ''}
+                ) : (
+                  <div className="big-btn-container">
+                  <button type="submit" onSubmit={handleSubmit} className="next-btn">Next Step</button>
+                </div>
+                )}
               </div>
           </Form>
         </div>
@@ -68,6 +72,13 @@ const validate = Yup.object({
 }
 
 const Container = styled.div`
+
+.big-btn-container {
+  display:flex; 
+  justify-content: flex-end;
+  margin-top: 7em;
+}
+
 
 .btn-container {
   background: #fff;
