@@ -35,11 +35,11 @@ const handleSubmit = (values, actions) => {
     url: "https://formspree.io/f/xgebzjpe",
     data: values
   })
-    .then(response => {
-      setIndex(1)
-    })
-    .catch(error => {
-      console.log(error);
+  .then(response => {
+    setIndex(1)
+  })
+  .catch(error => {
+    console.log(error);
   });
 };
 

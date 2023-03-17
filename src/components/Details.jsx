@@ -9,45 +9,41 @@ import DetailsStepFive from './details/DetailsStepFive'
 
 const Details = () => {
 
-  const {index, choice} = useGlobalContext()
-  // console.log(choice);
+  const {index} = useGlobalContext()
 
-
-  return (
-    <Container>
-      {index === 0 ? 
-      <div className="time">
-        <DetailsStepOne/>
-      </div>
-    : index === 1 ? 
-      <div className="time">
-        <DetailsStepTwo/>
-      </div>
-    : index === 2 ? 
+return (
+  <Container>
+    {index === 0 ? 
     <div className="time">
-      <DetailsStepThree/>
-
+      <DetailsStepOne/>
     </div>
-    : index === 3 ?
-      <DetailsStepFour/>
-    : index === 4 ? 
-      <DetailsStepFive/>       
-    : ''
-    }
-    
-    </Container>
-  )
+  : index === 1 ? 
+    <div className="time">
+      <DetailsStepTwo/>
+    </div>
+  : index === 2 ? 
+  <div className="time">
+    <DetailsStepThree/>
+
+  </div>
+  : index === 3 ?
+    <DetailsStepFour/>
+  : index === 4 ? 
+    <DetailsStepFive/>       
+  : ''
+  }
+  </Container>
+)
 }
 
 const Container = styled.div`
   padding: 1.7em 1.5em;
   background-color: #fff;
   border-radius: 8px;
-  /* border: none; */
 
 
-  .time {
-    transition-delay: 2s;
+.time {
+  transition-delay: 2s;
   }
 
 .info {
@@ -57,8 +53,6 @@ const Container = styled.div`
 label {
   display: block;
 }
-
-
 .img-option {
   margin-right: 0.5em;
 }
@@ -69,36 +63,33 @@ label {
 }
 
 .toggle-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 240px;
-    margin: 0 auto 4em;
-       transition: transform 0.4s ease;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+  margin: 0 auto 4em;
+  transition: transform 0.4s ease;
 }
 
 .toggle-container label {
 	background-image: var(--linear-main);
-    display: inline-block;
-    height: 24px;
-    width: 48px;
-      background: pink;
-    border-radius: 50px;
-    position: relative;
-       transition: transform 0.4s ease;
-
+  display: inline-block;
+  height: 24px;
+  width: 48px;
+  background: pink;
+  border-radius: 50px;
+  position: relative;
+  transition: transform 0.4s ease;
 }
 
 .toggle-container .ball {
-   height: 16px;
-   width: 16px;
-   background: #fff;
-   border-radius: 50%;
-   position: absolute;
-   top: 4px;
-   /* left: 4px; */
-   transition: transform 0.4s ease;
+  height: 16px;
+  width: 16px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  transition: transform 0.4s ease;
 }
 
 .is-checked {
@@ -107,16 +98,13 @@ label {
 }
 
 .is-not-checked {
-    transform: translateX(28px);
-
-    transition: transform 0.4s ease;
-
+  transform: translateX(28px);
+  transition: transform 0.4s ease;
 }
 
-
 .toggle-container input {
-    transform: translateX(-99999px);
-    position: absolute;
+  transform: translateX(-99999px);
+  position: absolute;
 }
 
 .label-add-ons {

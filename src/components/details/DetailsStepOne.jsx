@@ -4,10 +4,6 @@ import { Formik, Form } from 'formik';
 import * as Yup from 'yup'
 import {TextField} from '../TextField'
 import { useGlobalContext } from '../context';
-import axios from 'axios'
-
-
-
 
 const DetailsStepOne = () => {
 
@@ -58,7 +54,7 @@ const validate = Yup.object({
                 </div>
                 {windowWidth < 768 ? (
                 <div className="btn-container">
-                  <button type="submit" onClick={handleSubmit} className="next-btn">Next Step</button>
+                  <button type="submit" onSubmit={handleSubmit} className="next-btn">Next Step</button>
                 </div>
                 ) : ''}
               </div>
@@ -121,7 +117,7 @@ input {
   border-radius: 5px ;
   outline: 0;
   color: var(--clr-marine-blue);
-  font-weight: 700;
+  font-weight: 500;
 }
 
 input::placeholder {
