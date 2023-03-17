@@ -32,7 +32,7 @@ const openModal = () => {
 const handleSubmit = (values, actions) => {
   axios({
     method: "POST",
-    url: "https://formspree.io/f/xgebzjpe",
+    url: "https://formspree.io/f/mvonqjdk",
     data: values
   })
   .then(response => {
