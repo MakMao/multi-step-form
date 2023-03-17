@@ -1,21 +1,15 @@
-# E-Commerce REACT
-
+# MULTI STEP FORM
 
 ## Overview
 
-Building an E-Commerce project using REACT (both frontend and backend).
+building a Multi Step Form
 
 ### Links
 
-https://protein-store.netlify.app
+https://makmao-multi-form.netlify.app/
 
 ### Screenshots
 
 ## My Process
 
-It took me quite some time to build this Protein Store. I already built an E-Commerce store before, however, I decided to challenge myself a bit more this time by adding some more in depth features.
-I set up my own API with JSON, used firebase for login/sign in functions, stripe for payment options, and many libraries such as yup, axios, formik etc. Everything in this project is built from scrath.
-
-I do like to mention here that the main focus was on the frontend side of the project, however, as I was building this project it was tempting to include the backend part as well which I eventually did. As for the CSS, I used 'styled components' which I believe is the best approach when building a project with many components. That said, it's harder to write DRY code as applying BEM is very complicated when using styled components. I did spent a significant amount of time on the CSS.
-
-Please check the link above to see a preview of the Protein Store. 
+I built this app using React, styled components, yup, formik and other JS libraries. It was fun to play around with state management and I learnt a thing or two when building this project. This was an advanced challenge on Frontend Mentor (https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ) as it contains 'many challenges along the way to completion'. I am happy I completed it in accordance with what's being asked. On to the next!
